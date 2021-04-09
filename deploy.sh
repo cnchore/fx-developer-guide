@@ -24,3 +24,6 @@ git push -f https://github.com/cnchore/fx-developer-guide.git master:gh-pages
 # git subtree push --prefix docs/.vuepress/dist origin gh-pages
 
 cd -
+
+#删除docs/.vuepress/dist目录及文件
+node delFiles.js
