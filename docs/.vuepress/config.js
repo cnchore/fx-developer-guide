@@ -37,5 +37,4 @@ module.exports = {
         },
     },
     base: "/fx-developer-guide/",
-    dest: "public",
 }
