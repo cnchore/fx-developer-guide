@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>公共工具类 | 金财事业群前端开发手册</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/front-end-developer-guide/favicon.ico">
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/front-end-developer-guide/assets/css/0.styles.9faf0953.css" as="style"><link rel="preload" href="/front-end-developer-guide/assets/js/app.f640b3ea.js" as="script"><link rel="preload" href="/front-end-developer-guide/assets/js/2.9f8caf2a.js" as="script"><link rel="preload" href="/front-end-developer-guide/assets/js/10.cfca83cb.js" as="script"><link rel="prefetch" href="/front-end-developer-guide/assets/js/11.64743277.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/12.49544c2d.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/13.a1c3b09a.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/14.60256a70.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/15.437885ae.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/16.f35e267a.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/17.f902fbc7.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/3.f5bd3b9e.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/4.7881e85c.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/5.5dbd2035.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/6.cb1d9679.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/7.7e5c2020.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/8.4e0d47b4.js"><link rel="prefetch" href="/front-end-developer-guide/assets/js/9.0e266ddb.js">
+    <link rel="stylesheet" href="/front-end-developer-guide/assets/css/0.styles.9faf0953.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-end-developer-guide/" class="home-link router-link-active"><img src="/front-end-developer-guide/favicon.ico" alt="金财事业群前端开发手册" class="logo"> <span class="site-name can-hide">金财事业群前端开发手册</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-end-developer-guide/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/front-end-developer-guide/ttk2.x/react/" class="nav-link router-link-active">
+  ttk2.x/react
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-end-developer-guide/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/front-end-developer-guide/ttk2.x/react/" class="nav-link router-link-active">
+  ttk2.x/react
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/front-end-developer-guide/ttk2.x/react/" aria-current="page" class="sidebar-link">ttk2.x/react 介绍</a></li><li><a href="/front-end-developer-guide/ttk2.x/react/目录结构.html" class="sidebar-link">目录结构</a></li><li><a href="/front-end-developer-guide/ttk2.x/react/环境准备.html" class="sidebar-link">环境准备</a></li><li><a href="/front-end-developer-guide/ttk2.x/react/常用Git命令.html" class="sidebar-link">常用Git命令</a></li><li><a href="/front-end-developer-guide/ttk2.x/react/开发规范.html" class="sidebar-link">开发规范</a></li><li><a href="/front-end-developer-guide/ttk2.x/react/公共工具类.html" class="active sidebar-link">公共工具类</a></li><li><a href="/front-end-developer-guide/ttk2.x/react/公共组件.html" class="sidebar-link">公共组件</a></li><li><a href="/front-end-developer-guide/ttk2.x/react/门户赋能.html" class="sidebar-link">门户赋能</a></li><li><a href="/front-end-developer-guide/ttk2.x/react/开发套路.html" class="sidebar-link">开发套路</a></li><li><a href="/front-end-developer-guide/ttk2.x/react/常见问题.html" class="sidebar-link">常见问题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="公共工具类"><a href="#公共工具类" class="header-anchor">#</a> 公共工具类</h1> <p>ttk/utils，提供了日常开发中常用的公共方法</p> <ul><li>base64 编码、解码</li> <li>calculate 计算2个数的加减乘除精确结果</li> <li>date 日期方法
+<ul><li>transformDate string转date</li> <li>transformMomentDate string转moment</li> <li>monthStartEndDay 获取指定string日期的月首和月末</li></ul></li> <li>des 基于<a href="https://cryptojs.gitbook.io/docs/" target="_blank" rel="noopener noreferrer">CryptoJS<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>的标准和安全加密算法</li> <li>environment 环境检查方法
+<ul><li>getBrowserVersion 获取浏览器版本</li> <li>isDevMode 是否为开发环境</li> <li>isTestMode 是否为测试环境</li> <li>isClientMode 是否为客户端环境</li></ul></li> <li>equal 比较方法
+<ul><li>shallowEqual 两个对象的浅比较</li> <li>deepEqualWithoutFunc 无函数的深比较</li></ul></li> <li>eventUtil 事件类
+<ul><li>addHandler 给元素添加某事件</li> <li>removeHandler 删除元素上的某事件</li></ul></li> <li>fetch 网络请求类
+<ul><li>config fetch配置方法</li> <li>get fetch的get请求，添加了token，指定为application/json，并返回了Promise实例</li> <li>post fetch的post请求，添加了token，指定为application/json，并返回了Promise实例</li> <li>formPost form的post请求，添加了token</li> <li>printPost</li> <li>getAccessToken 获取sessionStorage中的_accessToken</li> <li>setAccessToken 设置sessionStorage中的_accessToken</li> <li>clearAccessToken 清除sessionStorage中的_accessToken</li></ul></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">4/8/2021, 8:14:05 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/front-end-developer-guide/ttk2.x/react/开发规范.html" class="prev">
+        开发规范
+      </a></span> <span class="next"><a href="/front-end-developer-guide/ttk2.x/react/公共组件.html">
+        公共组件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/front-end-developer-guide/assets/js/app.f640b3ea.js" defer></script><script src="/front-end-developer-guide/assets/js/2.9f8caf2a.js" defer></script><script src="/front-end-developer-guide/assets/js/10.cfca83cb.js" defer></script>
+  </body>
+</html>
