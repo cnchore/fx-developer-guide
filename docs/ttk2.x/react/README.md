@@ -6,11 +6,11 @@
 
 <div class="pic-plus">
 
-  <img width="150" src="/react.svg"/>
+  <img width="150" :src="$withBase('/react.svg')"/>
   <span>+</span>
-  <img width="150" src="/redux.png"/>
+  <img width="150" :src="$withBase('/redux.png')"/>
   <span>+</span>
-  <img width="150" src="/json.jpeg"/>
+  <img width="150" :src="$withBase('/json.jpeg')"/>
 
 </div>
 
@@ -163,7 +163,7 @@
 
 * 现代浏览器和 IE9 及以上。
 
-| <img src="/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" /></br>IE / Edge | <img src="/firefox_48x48.png" alt="Firefox" width="24px" height="24px" /></br>Firefox | <img src="/chrome_48x48.png" alt="Chrome" width="24px" height="24px" /></br>Chrome | <img src="/safari_48x48.png" alt="Safari" width="24px" height="24px" /></br>Safari | <img src="/opera_48x48.png" alt="Opera" width="24px" height="24px" /></br>Opera |
+| <img :src="$withBase('/edge_48x48.png')" alt="IE / Edge" width="24px" height="24px" /></br>IE / Edge | <img :src="$withBase('/firefox_48x48.png')" alt="Firefox" width="24px" height="24px" /></br>Firefox | <img :src="$withBase('/chrome_48x48.png')" alt="Chrome" width="24px" height="24px" /></br>Chrome | <img :src="$withBase('/safari_48x48.png')" alt="Safari" width="24px" height="24px" /></br>Safari | <img :src="$withBase('/opera_48x48.png')" alt="Opera" width="24px" height="24px" /></br>Opera |
 | --- | --- | --- | --- | --- |
 | Edge, IE9及以上 | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
 
