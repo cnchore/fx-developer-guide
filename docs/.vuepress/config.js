@@ -36,6 +36,6 @@ module.exports = {
             ],
         },
     },
-    base: "/front-end-developer-guide/",
+    base: "/fx-developer-guide/",
     dest: "public",
 }
